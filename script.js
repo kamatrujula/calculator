@@ -15,13 +15,13 @@ function calc(){
         var result = parseInt(num1) * parseInt(num2);
     }
 
-    if(operator == '/'){
-        var result = parseInt(num1) / parseInt(num2);
+    if(operator == 'exp'){
+        var result = 1;
+
+        for(let i=0; i<parseInt(num2); i++){
+            result *= parseInt(num1);
+        }
     }
 
-    if(operator == '%'){
-        var result = parseInt(num1) %  parseInt(num2);
-    }
-    
     document.getElementById('result').value = result;
 }
