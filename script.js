@@ -18,6 +18,10 @@ function calc(){
     if(operator == '/'){
         var result = parseInt(num1) / parseInt(num2);
     }
+
+    if(operator == '%'){
+        var result = parseInt(num1) %  parseInt(num2);
+    }
     
     document.getElementById('result').value = result;
 }
