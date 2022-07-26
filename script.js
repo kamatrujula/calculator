@@ -4,22 +4,25 @@ function calc(){
     let operator = document.getElementById('op').value;
 
     if(operator == '+'){
-        var result = parseInt(num1) + parseInt(num2);
+        var result = parseFloat(num1) + parseFloat(num2);
     }
 
     if(operator == '-'){
-        var result = parseInt(num1) - parseInt(num2);
+        var result = parseFloat(num1) - parseFloat(num2);
     }
 
     if(operator == '*'){
-        var result = parseInt(num1) * parseInt(num2);
+        var result = parseFloat(num1) * parseFloat(num2);
     }
 
     if(operator == 'exp'){
         var result = 1;
+        if(parseFloat(num2)<0){
+            alert('Instructions not followed. Enter positive power.')
+        }
 
-        for(let i=0; i<parseInt(num2); i++){
-            result *= parseInt(num1);
+        for(let i=0; i<parseFloat(num2); i++){
+            result *= parseFloat(num1);
         }
     }
 
