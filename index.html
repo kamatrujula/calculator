@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Calculator</h1>
+    <div class="container" id="container">
+        <input class="online" type="number" name="first" id="first" step="any">
+        <select class="online" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input class="online" type="number" name="second" id="second" step="any">
+        <button onClick="calc()">Calculate</button>
+        <input class="result" type="text" name="result" id="result" readonly>
+    </div>
+
+    <div>
+        <h3>Instructions while using the calculator</h3>
+        <ul>
+            <li>Note that for for the calculator, give only integer inputs. Do not insert fractions, decimals, or other
+                letters and characters.</li>
+            <li>Both values must be filled.</li>
+            <li>This calculator currently only has basic arithmetic operations i.e. addition, subtraction,
+                multiplication and division.</li>
+            <li>Negative integers are allowed.</li>
+        </ul>
+        <h3>Ignoring any of the above may result in unintended outputs</h3>
+    </div>
+
+    <script rel="text/javascript" src="script.js"></script>
+</body>
+
+</html>

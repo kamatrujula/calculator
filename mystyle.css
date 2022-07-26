@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+
+body{
+    background-color: #caf0f8;
+    color: #03045e;
+}
+
+div.container{
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: none; 
+    display: inline-block;
+}
+
+button{
+    width: 100%;
+    border: 2px solid #03045e;
+    color: #03045e;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: white;
+    height: 60px;
+}
+
+input, select{
+    padding: 2px 0;
+    margin: 2px 0;
+    border: 2px solid #03045e;
+    color: #03045e;
+    text-align: center;
+    font-size: 2em;
+    height: 3em;
+}
+
+input.result{
+    width: 100%;
+}
+input.online{
+    width: 40%;
+}
+
+select.online{
+    width: 16%;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h3{
+    width: 85%;
+    text-align: left; 
+    margin: 0 15%;
+}
+
+ul{
+    width: 85%;
+    text-align: left; 
+    margin: 0 15%;
+}
+
